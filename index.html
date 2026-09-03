@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="prem.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nongprem ❄</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <video autoplay loop muted playsinline class="video-bg" id="bg-video">
+        <source src="ILLSLICK - ตีหนึ่งที่คูเมือง [Official Video].mp4" type="video/mp4" id="video-source">
+    </video>
+
+    <div class="background-overlay"></div>
+
+    <canvas id="snow-canvas"></canvas>
+
+    <div class="profile-card">
+        <img src="profile.jpg" alt="profile" class="profile-img">
+        <h1 class="username">Nongprem ❄</h1>
+
+        <div class="social-icons">
+            <a href="https://discord.gg/h8euBk8YPW" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/punnawit.tz" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@nongpremchie" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/share/1FK2bHWbWw/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        <div class="music-player-ux">
+            <img src="songcover.jpg" alt="song cover" class="song-cover" id="song-cover">
+            <div class="song-details">
+                <span class="song-title" id="song-title">กำลังโหลด...</span>
+                
+                <div class="progress-container" id="progress-container">
+                    <div class="progress-bar" id="progress"></div>
+                </div>
+
+                <div class="controls-wrapper">
+                    <span class="time-display" id="current-time">0:00</span>
+                    
+                    <div class="main-buttons">
+                        <button class="ctrl-btn" id="prev-btn" title="เพลงก่อนหน้า">
+                            <i class="fas fa-backward-step"></i>
+                        </button>
+                        <button class="ctrl-btn play-btn-main" id="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="ctrl-btn" id="next-btn" title="เพลงถัดไป">
+                            <i class="fas fa-forward-step"></i>
+                        </button>
+                    </div>
+
+                    <span class="time-display" id="duration">0:00</span>
+                </div>
+            </div>
+        </div>
+
+        <audio id="audio"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
